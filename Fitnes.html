@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Club</title>
+    <link rel="icon" href="Style/Assets/Air Balloon 1 (1).png">
+    <link rel="stylesheet" href="Style/Stylings/fitness.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="name">FITNESS CLUB</h1>
+      <div class="nav">
+        <a href="index.html">HOME</a>
+        <a href="Nutrition.html">NUTRITION</a>
+        <a href="Fitnes.html">FITNESS</a>
+        <a href="Calories.html">CALORIES</a>
+      </div>
+      <label class="hamburger">
+        <input type="checkbox" />
+        <svg viewBox="0 0 32 32" class="toggler">
+          <path
+            class="line line-top-bottom"
+            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+          ></path>
+          <path class="line" d="M7 16 27 16"></path>
+        </svg>
+      </label>
+    </header>
+
+    <main>
+      <div class="custom-select-container">
+        <select class="custom-select">
+          <option value="abdominals">Abdominals</option>
+          <option value="abductors">Abductors</option>
+          <option value="adductors">Adductors</option>
+          <option value="biceps">Biceps</option>
+          <option value="calves">Calves</option>
+          <option value="chest">Chest</option>
+          <option value="forearms">Forearms</option>
+          <option value="glutes">Glutes</option>
+          <option value="hamstrings">Hamstrings</option>
+          <option value="lats">Lats</option>
+          <option value="lower_back">Lower Back</option>
+          <option value="middle_back">Middle Back</option>
+          <option value="neck">Neck</option>
+          <option value="quadriceps">Quadriceps</option>
+          <option value="traps">Traps</option>
+          <option value="triceps">Triceps</option>
+        </select>
+        <button>Search</button>
+      </div>
+    </main>
+      <div class="cards-div">
+        <div class="cards">
+          <ul>
+            <li>Name : <span class="card-1-name"></span></li>
+            <li>Difficulty : <span class="card-1-difficulty"></span> </li>
+            <li>Equipment : <span class="card-1-eqiupment"></span> </li>
+            <li>Instruction : <span class="card-1-instruction"></span></li>
+            <li>Type : <span class="card-1-type"></span></li>
+          </ul>
+        </div>
+        <div class="cards">
+          <ul>
+            <li>Name : <span class="card-2-name"></span></li>
+            <li>Difficulty : <span class="card-2-difficulty"></span> </li>
+            <li>Equipment : <span class="card-2-eqiupment"></span> </li>
+            <li>Instruction : <span class="card-2-instruction"></span></li>
+            <li>Type : <span class="card-2-type"></span></li>
+          </ul>
+        </div>
+        <div class="cards">
+          <ul>
+            <li>Name : <span class="card-3-name"></span></li>
+            <li>Difficulty : <span class="card-3-difficulty"></span> </li>
+            <li>Equipment : <span class="card-3-eqiupment"></span> </li>
+            <li>Instruction : <span class="card-3-instruction"></span></li>
+            <li>Type : <span class="card-3-type"></span></li>
+          </ul>
+        </div>
+        <div class="cards">
+          <ul>
+            <li>Name : <span class="card-4-name"></span></li>
+            <li>Difficulty : <span class="card-4-difficulty"></span> </li>
+            <li>Equipment : <span class="card-4-eqiupment"></span> </li>
+            <li>Instruction : <span class="card-4-instruction"></span></li>
+            <li>Type : <span class="card-4-type"></span></li>
+          </ul>
+        </div>
+   
+      </div>
+   
+    <script src="JavaScript/fitness.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </body>
+</html>

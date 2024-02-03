@@ -51,9 +51,9 @@ async function callAPI(food) {
 }
 
 btn.addEventListener("click", () => {
-  let text = input.value;
-  if (text !== "") {
-    callAPI(text);
+  let food = input.value;
+  if (food !== "") {
+    callAPI(food);
     head.remove();
     info.style.display = "flex";
   } else {

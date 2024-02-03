@@ -283,7 +283,7 @@ li::marker {
 }
 
 *::-webkit-scrollbar {
-  width: 20px;
+  width: 10px;
 }
 
 *::-webkit-scrollbar-track {
@@ -293,7 +293,7 @@ li::marker {
 *::-webkit-scrollbar-thumb {
   background-color: #000000;
   border-radius: 100px;
-  border: 2px dotted #eb0000;
+ 
 }
 
 @media only screen and (max-width: 400px) {

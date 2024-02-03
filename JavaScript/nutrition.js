@@ -1,4 +1,4 @@
-let input = document.querySelector("input");
+let input = document.querySelector("#input");
 let productName = document.querySelector(".product");
 let calories = document.querySelector(".Calories");
 let carbohydrates = document.querySelector(".Carbohydrates");
@@ -16,7 +16,20 @@ let info = document.querySelector(".info");
 let heading = document.querySelector(".error");
 let body = document.querySelector("body");
 let head = document.createElement("h1");
-
+btn.addEventListener("click", () => {
+  let text = input.value;
+  console.log("Input value:", text);
+  if (text !== "") {
+    callAPI(text);
+    head.remove();
+    info.style.display = "flex";
+  } else {
+    info.style.display = "none";
+    head.classList.add("head");
+    body.append(head);
+    head.innerHTML = "<br>Please Enter Food";
+  }
+});
 const options = {
   method: "GET",
   url: "https://nutrition-by-api-ninjas.p.rapidapi.com/v1/nutrition",
@@ -31,7 +44,7 @@ async function callAPI(food) {
   try {
     options.params = { query: food };
     const response = await axios.request(options);
-    console.log(response.data[0]);
+    console.log(response.data);
     productName.innerText = response.data[0].name;
     cholestrol.innerText = response.data[0].cholesterol_mg;
     calories.innerText = response.data[0].calories;
@@ -50,26 +63,10 @@ async function callAPI(food) {
   }
 }
 
-btn.addEventListener("click", () => {
-  let food = input.value;
-  if (food !== "") {
-    callAPI(food);
-    head.remove();
-    info.style.display = "flex";
-  } else {
-    info.style.display = "none";
-    head.classList.add("head");
-    body.append(head);
-    head.innerHTML = "<br>Please Enter Food";
-  }
-});
-
 let svg = document.querySelector(".toggler");
 let toggleNav = document.querySelector(".toggle-nav");
 let nav = document.querySelector(".nav");
 
-
 svg.addEventListener("click", () => {
-  nav.classList.toggle("toggle-nav"); 
-  
+  nav.classList.toggle("toggle-nav");
 });

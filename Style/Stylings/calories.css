@@ -280,6 +280,7 @@ li::marker {
 * {
   scrollbar-width: thin;
   scrollbar-color: #000000 #ffffff;
+  border-radius: 100px;
 }
 
 *::-webkit-scrollbar {
@@ -288,6 +289,7 @@ li::marker {
 
 *::-webkit-scrollbar-track {
   background: #ffffff;
+  border-radius: 100px;
 }
 
 *::-webkit-scrollbar-thumb {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fitness Club</title>
-    <link rel="icon" href="Style/Assets/Air Balloon 1 (1).png">
+    <link rel="icon" href="Style/Assets/Air Balloon 1 (1).png" />
     <link rel="stylesheet" href="Style/Stylings/fitness.css" />
   </head>
   <body>
@@ -15,6 +15,7 @@
         <a href="Nutrition.html">NUTRITION</a>
         <a href="Fitnes.html">FITNESS</a>
         <a href="Calories.html">CALORIES</a>
+        
       </div>
       <label class="hamburger">
         <input type="checkbox" />
@@ -30,7 +31,7 @@
 
     <main>
       <div class="custom-select-container">
-        <select class="custom-select">
+        <select class="custom-select" id="input" placeholder="Chhose">
           <option value="abdominals">Abdominals</option>
           <option value="abductors">Abductors</option>
           <option value="adductors">Adductors</option>
@@ -48,49 +49,51 @@
           <option value="traps">Traps</option>
           <option value="triceps">Triceps</option>
         </select>
-        <button>Search</button>
+        <button><span></span>
+          <span></span>
+          <span></span>
+          <span></span>Search</button>
       </div>
     </main>
-      <div class="cards-div">
-        <div class="cards">
-          <ul>
-            <li>Name : <span class="card-1-name"></span></li>
-            <li>Difficulty : <span class="card-1-difficulty"></span> </li>
-            <li>Equipment : <span class="card-1-eqiupment"></span> </li>
-            <li>Instruction : <span class="card-1-instruction"></span></li>
-            <li>Type : <span class="card-1-type"></span></li>
-          </ul>
-        </div>
-        <div class="cards">
-          <ul>
-            <li>Name : <span class="card-2-name"></span></li>
-            <li>Difficulty : <span class="card-2-difficulty"></span> </li>
-            <li>Equipment : <span class="card-2-eqiupment"></span> </li>
-            <li>Instruction : <span class="card-2-instruction"></span></li>
-            <li>Type : <span class="card-2-type"></span></li>
-          </ul>
-        </div>
-        <div class="cards">
-          <ul>
-            <li>Name : <span class="card-3-name"></span></li>
-            <li>Difficulty : <span class="card-3-difficulty"></span> </li>
-            <li>Equipment : <span class="card-3-eqiupment"></span> </li>
-            <li>Instruction : <span class="card-3-instruction"></span></li>
-            <li>Type : <span class="card-3-type"></span></li>
-          </ul>
-        </div>
-        <div class="cards">
-          <ul>
-            <li>Name : <span class="card-4-name"></span></li>
-            <li>Difficulty : <span class="card-4-difficulty"></span> </li>
-            <li>Equipment : <span class="card-4-eqiupment"></span> </li>
-            <li>Instruction : <span class="card-4-instruction"></span></li>
-            <li>Type : <span class="card-4-type"></span></li>
-          </ul>
-        </div>
-   
+    <div class="cards-div">
+      <div class="cards">
+        <ul>
+          <li>Name : <span class="card-1-name"></span></li>
+          <li>Difficulty : <span class="card-1-difficulty"></span></li>
+          <li>Equipment : <span class="card-1-eqiupment"></span></li>
+          <li>Instruction : <span class="card-1-instruction"></span></li>
+          <li>Type : <span class="card-1-type"></span></li>
+        </ul>
       </div>
-   
+      <div class="cards">
+        <ul>
+          <li>Name : <span class="card-2-name"></span></li>
+          <li>Difficulty : <span class="card-2-difficulty"></span></li>
+          <li>Equipment : <span class="card-2-eqiupment"></span></li>
+          <li>Instruction : <span class="card-2-instruction"></span></li>
+          <li>Type : <span class="card-2-type"></span></li>
+        </ul>
+      </div>
+      <div class="cards">
+        <ul>
+          <li>Name : <span class="card-3-name"></span></li>
+          <li>Difficulty : <span class="card-3-difficulty"></span></li>
+          <li>Equipment : <span class="card-3-eqiupment"></span></li>
+          <li>Instruction : <span class="card-3-instruction"></span></li>
+          <li>Type : <span class="card-3-type"></span></li>
+        </ul>
+      </div>
+      <div class="cards">
+        <ul>
+          <li>Name : <span class="card-4-name"></span></li>
+          <li>Difficulty : <span class="card-4-difficulty"></span></li>
+          <li>Equipment : <span class="card-4-eqiupment"></span></li>
+          <li>Instruction : <span class="card-4-instruction"></span></li>
+          <li>Type : <span class="card-4-type"></span></li>
+        </ul>
+      </div>
+    </div>
+
     <script src="JavaScript/fitness.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </body>

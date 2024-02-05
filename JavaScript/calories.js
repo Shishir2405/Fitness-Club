@@ -5,10 +5,11 @@ let nav = document.querySelector(".nav");
 svg.addEventListener("click", () => {
   nav.classList.toggle("toggle-nav");
 });
-let input = document.querySelector("input");
+let input = document.querySelector("#input");
 let btn = document.querySelector("button");
 btn.addEventListener("click", () => {
   let activity = input.value;
+  console.log(activity);
   callAPI(activity);
 });
 
@@ -40,7 +41,9 @@ const header = {
 async function callAPI(activity) {
   try {
     const response = await axios.get(url + activity, header);
+    
     console.log(response.data);
+    
     card1NameElement.innerHTML = response.data[0].name;
     card1CalElement.innerHTML = response.data[0].calories_per_hour;
     card1TimeElement.innerHTML = response.data[0].duration_minutes;

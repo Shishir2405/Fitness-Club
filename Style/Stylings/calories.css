@@ -30,7 +30,12 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+label {
+  margin-right: 3rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: -0.027rem;
+}
 a {
   text-decoration: none;
   color: #bcbcbc;
@@ -94,7 +99,7 @@ button {
 
 button:hover {
   box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
-  transition-delay: 0.6s;
+  transition-delay: 0.1s;
 }
 
 button span {
@@ -172,7 +177,7 @@ button:active
   transition: none;
   transition-delay: none;
 }
-main{
+main {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -255,7 +260,7 @@ main{
   margin-top: 2rem;
 }
 .card {
-  height: 13rem;
+  height: 15rem;
   width: 70%;
   border: 2px solid rgb(141, 109, 255);
   border-radius: 1.5rem;
@@ -277,37 +282,33 @@ li::marker {
   content: "🔹";
   font-size: 1.25rem;
 }
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #000000 #ffffff;
-  border-radius: 100px;
+::-webkit-scrollbar {
+  width: 0.35rem;
+ margin-right: 0.25rem;
 }
 
-*::-webkit-scrollbar {
-  width: 10px;
+::-webkit-scrollbar-thumb {
+  border-radius: 2.5rem;
+  background: -webkit-gradient(linear,left top,left bottom,from(#cd23fc),to(#a609ca));
+  box-shadow: inset 2px 2px 2px rgba(255,255,255,.25), inset -2px -2px 2px rgba(0,0,0,.25);
 }
 
-*::-webkit-scrollbar-track {
-  background: #ffffff;
-  border-radius: 100px;
+::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 10px;
+  background: linear-gradient(to right,#201c29,#201c29 1px,#100e17 1px,#100e17);
 }
 
-*::-webkit-scrollbar-thumb {
-  background-color: #000000;
-  border-radius: 100px;
- 
-}
-
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
   .name {
     text-wrap: wrap;
   }
-  .input{
+  .input {
     width: 10rem;
     margin-left: 0.5rem;
     margin-right: 0;
   }
-  button{
+  button {
     margin-left: 3rem;
   }
   header {
@@ -317,12 +318,14 @@ li::marker {
     text-wrap: wrap;
   }
 
- 
   .extra-content {
     flex-wrap: wrap;
   }
+  .hamburger{
+    height: 2em;
+  }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .hamburger {
     position: fixed;
     top: 1rem;
@@ -348,11 +351,12 @@ li::marker {
     backdrop-filter: blur(10px);
     border: 2px solid white;
     z-index: 1000;
+    height: 2em;
   }
   a {
     opacity: 0;
   }
-  .content-res{
+  .content-res {
     display: flex;
     flex-direction: column;
   }

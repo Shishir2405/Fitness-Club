@@ -256,9 +256,11 @@ main {
     display: flex;
   }
   .extra-content {
-    flex-wrap: wrap;
-    margin-top: 5rem;
-    z-index: 10;
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Two rows with equal height */
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+    gap: 0.5rem;
+    
   }
   .aside-img {
     display: none;
@@ -267,7 +269,7 @@ main {
     width: 100%;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
   .hamburger {
     position: fixed;
     top: 1rem;

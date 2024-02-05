@@ -324,6 +324,10 @@ li::marker {
   .hamburger{
     height: 2em;
   }
+  .name{
+    font-size: 2.25rem;
+  padding-top: 0.25rem;
+  }
 }
 @media only screen and (max-width: 900px) {
   .hamburger {

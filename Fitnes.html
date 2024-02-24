@@ -15,7 +15,6 @@
         <a href="Nutrition.html">NUTRITION</a>
         <a href="Fitnes.html">FITNESS</a>
         <a href="Calories.html">CALORIES</a>
-        
       </div>
       <label class="hamburger">
         <input type="checkbox" />
@@ -31,28 +30,38 @@
 
     <main>
       <div class="custom-select-container">
-        <select class="custom-select" id="input" placeholder="Chhose">
-          <option value="abdominals">Abdominals</option>
-          <option value="abductors">Abductors</option>
-          <option value="adductors">Adductors</option>
-          <option value="biceps">Biceps</option>
-          <option value="calves">Calves</option>
-          <option value="chest">Chest</option>
-          <option value="forearms">Forearms</option>
-          <option value="glutes">Glutes</option>
-          <option value="hamstrings">Hamstrings</option>
-          <option value="lats">Lats</option>
-          <option value="lower_back">Lower Back</option>
-          <option value="middle_back">Middle Back</option>
-          <option value="neck">Neck</option>
-          <option value="quadriceps">Quadriceps</option>
-          <option value="traps">Traps</option>
-          <option value="triceps">Triceps</option>
+        <select class="custom-select" id="input" placeholder="Choose">
+          <optgroup label="Upper Body">
+            <option value="chest">Chest</option>
+            <option value="triceps">Triceps</option>
+            <option value="biceps">Biceps</option>
+          </optgroup>
+          <optgroup label="Arms">
+            <option value="forearms">Forearms</option>
+            <option value="hand">Hand</option>
+          </optgroup>
+          <optgroup label="Legs">
+            <option value="abductors">Abductors</option>
+            <option value="adductors">Adductors</option>
+            <option value="calves">Calves</option>
+            <option value="quadriceps">Quadriceps</option>
+            <option value="hamstrings">Hamstrings</option>
+          </optgroup>
+          <optgroup label="Other">
+            <option value="lats">Lats</option>
+            <option value="middle_back">Middle Back</option>
+            <option value="neck">Neck</option>
+            <option value="lower_back">Lower Back</option>
+            <option value="glutes">Glutes</option>
+          </optgroup>
         </select>
-        <button><span></span>
+
+        <button>
           <span></span>
           <span></span>
-          <span></span>Search</button>
+          <span></span>
+          <span></span>Search
+        </button>
       </div>
     </main>
     <div class="cards-div">

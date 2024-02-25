@@ -65,7 +65,6 @@ label {
 }
 
 .custom-select {
- 
   font-size: 100%;
   padding: 0.8em;
   outline: none;
@@ -271,37 +270,48 @@ li {
   font-weight: 600;
   font-size: 1.25rem;
 }
-span{
+span {
   font-weight: 400;
   font-size: 1.05rem;
-  
 }
-span::first-letter{
+span::first-letter {
   text-transform: capitalize;
 }
-li::marker{
+li::marker {
   content: "🔹";
   font-size: 1.25rem;
 }
 
-
-
 *::-webkit-scrollbar {
   width: 0.35rem;
- margin-right: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 *::-webkit-scrollbar-thumb {
-  border-radius: 2.5rem;
-  background: -webkit-gradient(linear,left top,left bottom,from(#cd23fc),to(#a609ca));
-  box-shadow: inset 2px 2px 2px rgba(255,255,255,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+  border-radius: 50rem;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#cd23fc),
+    to(#a609ca)
+  );
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
 
 *::-webkit-scrollbar-track {
   background-color: #fff;
-  border-radius: 10px;
-  background: linear-gradient(to right,#201c29,#201c29 1px,#100e17 1px,#100e17);
+  border-radius: 50rem;
+  background: linear-gradient(
+    to right,
+    #201c29,
+    #201c29 1px,
+    #100e17 1px,
+    #100e17
+  );
 }
+
 @media only screen and (max-width: 430px) {
   .name {
     text-wrap: wrap;
@@ -313,41 +323,41 @@ li::marker{
   .description {
     text-wrap: wrap;
   }
- .custom-select-container{
-  margin-left: 0.5rem;
- }
+  .custom-select-container {
+    margin-left: 0.5rem;
+  }
   main {
-   display: flex;
-   justify-content: space-evenly;
+    display: flex;
+    justify-content: space-evenly;
   }
   .extra-content {
     flex-wrap: wrap;
   }
-  button{
-   margin: 0;
+  button {
+    margin: 0;
   }
-  
-  .cards{
+
+  .cards {
     width: 80%;
     margin-left: 0.5rem;
   }
-  label{
+  label {
     margin-right: 0.05rem;
     margin-left: 2rem;
     font-size: 1.25rem;
   }
-  .input{
+  .input {
     margin-right: 0.25rem;
   }
-  button{
+  button {
     margin-right: 1.5rem;
   }
-  .hamburger{
+  .hamburger {
     margin-right: 2rem;
   }
-  .name{
+  .name {
     font-size: 2.25rem;
-  padding-top: 0.25rem;
+    padding-top: 0.25rem;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -383,12 +393,12 @@ li::marker{
   }
 }
 @media only screen and (max-width: 1300px) {
-  .cards-div{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+  .cards-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .cards{
-    width: 90%
+  .cards {
+    width: 90%;
   }
 }

@@ -57,8 +57,6 @@ a:hover {
   -webkit-text-fill-color: transparent;
 }
 
-
-  
 .input {
   font-family: "Segoe UI", sans-serif;
   margin: 1em 0 1em 0;
@@ -307,7 +305,6 @@ li::marker {
 *::-webkit-scrollbar-thumb {
   background-color: #000000;
   border-radius: 100px;
- 
 }
 
 @media only screen and (max-width: 400px) {
@@ -322,19 +319,19 @@ li::marker {
   }
 
   main {
-  display: flex;
-  align-content: center;
-  justify-content: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
   }
   .extra-content {
     flex-wrap: wrap;
   }
-  .input{
+  .input {
     width: 10rem;
     margin-left: 0.5rem;
     margin-right: 0;
   }
-  button{
+  button {
     margin-left: 3rem;
   }
 }
@@ -345,9 +342,8 @@ li::marker {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-   
   }
-  .info{
+  .info {
     margin: 2rem 1rem;
     display: flex;
     flex-direction: column;
@@ -357,9 +353,9 @@ li::marker {
     content: "🔹";
     font-size: 1.5rem;
   }
-  .name{
+  .name {
     font-size: 2.25rem;
-  padding-top: 0.25rem;
+    padding-top: 0.25rem;
   }
 }
 @media only screen and (max-width: 950px) {
@@ -390,9 +386,9 @@ li::marker {
     z-index: 1000;
     height: 2em;
   }
- .name{
-  width: 33rem;
- }
+  .name {
+    width: 33rem;
+  }
   a {
     opacity: 0;
   }
@@ -404,27 +400,29 @@ li::marker {
     line-height: normal;
     padding: 0.5rem;
   }
-  .info{
+  .info {
     margin: 2rem 1rem;
   }
-  label{
+  label {
     margin-left: 1rem;
     margin-right: 0;
   }
-  .input{
+  .input {
     width: 7rem;
     margin-left: 0;
-
   }
-  button{
+  button {
     margin-left: 2rem;
   }
 }
 @media only screen and (max-width: 1000px) {
-   li{
+  li {
     padding-left: 0.75rem;
-   }
-   .info{
-    margin: 0.5rem 0.25rem  0 1rem;
-   }
+  }
+  .info {
+    margin: 0.5rem 0.25rem 0 1rem;
+  }
+}
+.name {
+  cursor: pointer;
 }

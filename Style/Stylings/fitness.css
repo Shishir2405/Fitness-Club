@@ -402,3 +402,6 @@ li::marker {
     width: 90%;
   }
 }
+.name {
+  cursor: pointer;
+}

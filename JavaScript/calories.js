@@ -41,9 +41,9 @@ const header = {
 async function callAPI(activity) {
   try {
     const response = await axios.get(url + activity, header);
-    
+
     console.log(response.data);
-    
+
     card1NameElement.innerHTML = response.data[0].name;
     card1CalElement.innerHTML = response.data[0].calories_per_hour;
     card1TimeElement.innerHTML = response.data[0].duration_minutes;
@@ -60,3 +60,7 @@ async function callAPI(activity) {
     console.log(error);
   }
 }
+let homeShort = document.querySelector(".name");
+homeShort.addEventListener("click", () => {
+  window.location.href = "main.html";
+});

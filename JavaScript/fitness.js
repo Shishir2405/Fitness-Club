@@ -74,3 +74,7 @@ async function callApi(muscles) {
     console.log(error);
   }
 }
+let homeShort = document.querySelector(".name");
+homeShort.addEventListener("click", () => {
+  window.location.href = "main.html";
+});

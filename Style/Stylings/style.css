@@ -32,7 +32,6 @@ br {
 *::-webkit-scrollbar-thumb {
   background-color: #000000;
   border-radius: 100px;
- 
 }
 
 header {
@@ -230,12 +229,12 @@ main {
   opacity: 1;
 }
 @media only screen and (max-width: 300px) {
-.extra-content{
-  flex-wrap: wrap;
-}
-.time{
-  margin: 0.35rem 0.25rem;
-}
+  .extra-content {
+    flex-wrap: wrap;
+  }
+  .time {
+    margin: 0.35rem 0.25rem;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -260,12 +259,11 @@ main {
     grid-template-rows: 1fr 1fr; /* Two rows with equal height */
     grid-template-columns: 1fr 1fr; /* Two columns with equal width */
     gap: 0.5rem;
-    
   }
   .aside-img {
     display: none;
   }
-  .written-text{
+  .written-text {
     width: 100%;
   }
 }
@@ -300,4 +298,7 @@ main {
   a {
     opacity: 0;
   }
+}
+.name {
+  cursor: pointer;
 }

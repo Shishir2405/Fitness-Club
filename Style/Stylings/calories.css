@@ -284,19 +284,32 @@ li::marker {
 }
 ::-webkit-scrollbar {
   width: 0.35rem;
- margin-right: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 2.5rem;
-  background: -webkit-gradient(linear,left top,left bottom,from(#cd23fc),to(#a609ca));
-  box-shadow: inset 2px 2px 2px rgba(255,255,255,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#cd23fc),
+    to(#a609ca)
+  );
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
 
 ::-webkit-scrollbar-track {
   background-color: #fff;
   border-radius: 10px;
-  background: linear-gradient(to right,#201c29,#201c29 1px,#100e17 1px,#100e17);
+  background: linear-gradient(
+    to right,
+    #201c29,
+    #201c29 1px,
+    #100e17 1px,
+    #100e17
+  );
 }
 
 @media only screen and (max-width: 420px) {
@@ -321,12 +334,12 @@ li::marker {
   .extra-content {
     flex-wrap: wrap;
   }
-  .hamburger{
+  .hamburger {
     height: 2em;
   }
-  .name{
+  .name {
     font-size: 2.25rem;
-  padding-top: 0.25rem;
+    padding-top: 0.25rem;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -364,4 +377,7 @@ li::marker {
     display: flex;
     flex-direction: column;
   }
+}
+.name {
+  cursor: pointer;
 }

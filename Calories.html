@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NutriFitTracker</title>
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+  />
     <link rel="icon" href="Style/Assets/Air Balloon 1 (1).png" />
     <link rel="stylesheet" href="Style/Stylings/calories.css" /> 
-    
   </head>
   <body>
     <header>
@@ -34,7 +37,8 @@
       <div class="input">
         <input type="text" required="" autocomplete="off" id="input" placeholder="Activity"  autofocus/>
       </div>
-      <button><span></span>
+      <button class="button">
+        <span></span>
         <span></span>
         <span></span>
         <span></span>Search</button>
@@ -70,6 +74,9 @@
         </ul>
       </div>
     </div>
+    <button id="scrollToTopBtn" title="Go to top"><span class="material-symbols-outlined">
+      expand_less
+      </span></button>
     <script src="JavaScript/calories.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </body>

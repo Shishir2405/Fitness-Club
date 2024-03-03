@@ -10,6 +10,10 @@
 body {
   height: 100vh;
   width: 100vw;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 br {
   display: block;
@@ -302,3 +306,4 @@ main {
 .name {
   cursor: pointer;
 }
+

@@ -242,9 +242,10 @@ main {
 }
 
 @media only screen and (max-width: 400px) {
-  body{
+  body {
     width: 100vw;
     overflow: hidden;
+    height: 80vh;
   }
   .name {
     text-wrap: wrap;
@@ -261,17 +262,16 @@ main {
   }
 
   main {
-    display: flex;
-   
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
   }
   .extra-content {
     display: grid;
-    grid-template-rows: 1fr 1fr; 
-    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
-  }
-  .aside-img {
-    display: none;
   }
   .written-text {
     width: 100%;
@@ -312,4 +312,3 @@ main {
 .name {
   cursor: pointer;
 }
-

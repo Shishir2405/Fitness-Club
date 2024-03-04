@@ -242,11 +242,16 @@ main {
 }
 
 @media only screen and (max-width: 400px) {
+  body{
+    width: 100vw;
+    overflow: hidden;
+  }
   .name {
     text-wrap: wrap;
     font-size: 2.5rem;
     margin-right: 0.5rem;
     padding-left: 2rem;
+    z-index: 10;
   }
   header {
     width: 70%;
@@ -257,11 +262,12 @@ main {
 
   main {
     display: flex;
+   
   }
   .extra-content {
     display: grid;
-    grid-template-rows: 1fr 1fr; /* Two rows with equal height */
-    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+    grid-template-rows: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr; 
     gap: 0.5rem;
   }
   .aside-img {

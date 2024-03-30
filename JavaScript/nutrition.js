@@ -77,10 +77,10 @@ document.addEventListener("DOMContentLoaded", function () {
       head.remove();
       info.style.display = "flex";
     } else {
-      info.style.display = "none";
-      head.classList.add("head");
-      body.append(head);
-      head.innerHTML = "<br>Please Enter Food";
+      input.classList.add("face");
+      setTimeout(() => {
+        window.location.reload();
+      }, 1000);
     }
   }
 
@@ -101,14 +101,17 @@ document.addEventListener("DOMContentLoaded", function () {
   var scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
   window.onscroll = function () {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          scrollToTopBtn.style.display = "block";
-      } else {
-          scrollToTopBtn.style.display = "none";
-      }
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
   };
 
   scrollToTopBtn.addEventListener("click", function () {
-      document.body.scrollIntoView({ behavior: "smooth", block: "start" });
+    document.body.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });

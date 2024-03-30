@@ -17,7 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
       callAPI(activity);
       handleClick();
     } else {
-      alert("Please enter an activity.");
+      input.classList.add("face");
+      setTimeout(() => {
+        window.location.reload();
+      }, 1000);
     }
   });
 

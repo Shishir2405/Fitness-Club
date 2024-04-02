@@ -368,6 +368,9 @@ li::marker {
   .custom-button {
     margin-left: 3rem;
   }
+  #scrollToTopBtn{
+    display: block;
+  }
 }
 @media only screen and (max-width: 950px) {
   .hamburger {
@@ -450,6 +453,7 @@ li::marker {
  display: flex;
  justify-content: center;
  align-items: center;
+ display: none;
 }
 .face {
   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
